@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Product · Move from first step to finished work</title><script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script><style>@font-face{font-family:"Launch Display";src:local("Georgia");}
+@font-face{font-family:"Launch Body";src:local("Arial");}
+@font-face{font-family:"Launch Mono";src:local("Consolas");}
+*{box-sizing:border-box} html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{font-family:"Launch Body",Arial,sans-serif;background:#0B1020}
+#root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;container-type:inline-size;color:#F8F9FC}
+.clip{position:absolute}
+.scene-bg{inset:0;background:radial-gradient(ellipse at 79% 28%,#151D2C,transparent 48%),#0B1020;z-index:0}
+.scene-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,transparent 20%,#8C7BFF12);}
+.scene-grid{inset:0;z-index:1;opacity:.16;background-image:linear-gradient(#F8F9FC10 1px,transparent 1px),linear-gradient(90deg,#F8F9FC10 1px,transparent 1px);background-size:7cqw 7cqw;mask-image:linear-gradient(to bottom,rgba(0,0,0,.6),transparent 76%)}
+.scene-thread{left:0;right:0;bottom:14%;height:1px;z-index:2;background:linear-gradient(90deg,transparent,#8C7BFFaa,transparent)}
+.scene-art{right:5%;top:17%;width:52%;height:64%;z-index:3;display:flex;align-items:center;justify-content:center}
+.orbit-art{position:relative;width:100%;height:100%;display:grid;place-items:center;color:#8C7BFF}
+.orbit-art svg{width:100%;height:100%;overflow:visible}
+.orbit-art ellipse,.orbit-art path{fill:none;stroke:#8C7BFF;stroke-width:2.2;opacity:.58;vector-effect:non-scaling-stroke}
+.orbit-art circle{fill:#F8F9FC;opacity:.88}
+.orbit-index{position:absolute;right:6%;bottom:6%;font:500 .8cqw/1.2 "Launch Mono",monospace;letter-spacing:.16em;color:#B7C1D2}
+.capture{position:relative;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.3cqw;padding:3cqw;border:1px solid #8C7BFF55;border-radius:1.2cqw;background:#151D2Caa;box-shadow:0 1.6cqw 5cqw #0003;overflow:hidden}
+.capture img{width:100%;height:100%;object-fit:contain;border-radius:.45cqw;background:#fff}
+.capture-pending{border-style:dashed;text-align:center}
+.capture-orbit{position:absolute;width:26cqw;height:26cqw;border:1px solid #8C7BFF44;border-radius:50%;box-shadow:0 0 6cqw #8C7BFF22;pointer-events:none}
+.capture-label,.capture-path,.capture-help{position:relative;margin:0;max-width:85%;}
+.capture-label{font:600 .9cqw/1.2 "Launch Mono",monospace;letter-spacing:.14em;color:#8C7BFF}
+.capture-path{font:500 1.25cqw/1.3 "Launch Mono",monospace;color:#F8F9FC;overflow-wrap:anywhere}
+.capture-help{font:400 1cqw/1.4 "Launch Body",Arial,sans-serif;color:#B7C1D2}
+.scene-copy{left:6.4%;top:18%;width:39%;z-index:4}
+.scene-brand{margin:0 0 3.2cqw;font:600 .82cqw/1.3 "Launch Mono",monospace;letter-spacing:.17em;color:#B7C1D2;text-transform:uppercase}
+.scene-eyebrow{margin:0 0 1.5cqw;font:600 .92cqw/1.2 "Launch Mono",monospace;letter-spacing:.15em;color:#8C7BFF;text-transform:uppercase}
+.scene-title{margin:0;color:#F8F9FC;font:600 4.1cqw/1.03 "Launch Display",Georgia,serif;letter-spacing:-.035em;max-width:100%;text-wrap:balance}
+.scene-support{margin:2.1cqw 0 0;color:#B7C1D2;font:400 1.4cqw/1.45 "Launch Body",Arial,sans-serif;max-width:95%}
+.scene-rule{width:6cqw;height:2px;margin-top:2.7cqw;background:#8C7BFF;transform-origin:left center}
+.scene-footer{top:5%;right:5%;z-index:5;color:#B7C1D2;font:500 .72cqw/1.25 "Launch Mono",monospace;letter-spacing:.12em;text-align:right}
+@media (max-aspect-ratio:1/1){.scene-title{font-size:5cqw}.scene-copy{width:43%}}
+</style></head><body>
+<div id="root" data-composition-id="scene-outcome" data-start="0" data-duration="7" data-width="1920" data-height="1080">
+  <div id="outcome-background" class="clip scene-bg" data-start="0" data-duration="7" data-track-index="0"></div>
+  <div id="outcome-grid" class="clip scene-grid" data-start="0" data-duration="7" data-track-index="1"></div>
+  <div id="outcome-thread" class="clip scene-thread" data-start="0" data-duration="7" data-track-index="2"></div>
+  <div id="outcome-art" class="clip scene-art" data-start="0" data-duration="7" data-track-index="3"><div class="orbit-art" aria-hidden="true">
+      <svg viewBox="0 0 760 500" role="presentation">
+        <g class="orbit-group" transform="rotate(203 380 250)">
+          <ellipse cx="380" cy="250" rx="285" ry="126" />
+          <ellipse cx="380" cy="250" rx="206" ry="92" transform="rotate(52 380 250)" />
+          <path d="M86 280 C190 60 340 425 494 172 S695 318 634 365" />
+          <circle cx="110" cy="247" r="8" /><circle cx="312" cy="316" r="8" />
+          <circle cx="494" cy="172" r="10" /><circle cx="634" cy="365" r="7" />
+        </g>
+      </svg>
+      <span class="orbit-index">07 / 08</span>
+    </div></div>
+  <div id="outcome-copy" class="clip scene-copy" data-start="0" data-duration="7" data-track-index="4">
+    <p class="scene-brand">Your Product</p><p class="scene-eyebrow">THE OUTCOME</p><h1 class="scene-title">Move from first step to finished work</h1><p class="scene-support">Use a real result or a clear summary of the value.</p><div id="outcome-rule" class="scene-rule"></div>
+  </div>
+  <div id="outcome-footer" class="clip scene-footer" data-start="0" data-duration="7" data-track-index="5">Your Product&nbsp;&nbsp;·&nbsp;&nbsp;07 / 08<br>46—53s</div>
+</div>
+<script>window.__timelines = window.__timelines || {};
+const timeline_outcome = gsap.timeline({ paused: true });
+timeline_outcome.fromTo(document.querySelector("#outcome-copy"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .62, ease: "power3.out" }, .08);
+timeline_outcome.fromTo(document.querySelector("#outcome-art"), { opacity: 0, scale: .95 }, { opacity: 1, scale: 1, duration: .78, ease: "power2.out" }, .16);
+timeline_outcome.fromTo(document.querySelector("#outcome-rule"), { scaleX: 0 }, { scaleX: 1, duration: .48, ease: "power2.out" }, .45);
+const orbit_outcome = document.querySelector("#outcome-art .orbit-group");
+if (orbit_outcome) timeline_outcome.fromTo(orbit_outcome, { rotation: -8, transformOrigin: "50% 50%" }, { rotation: 8, duration: 6.000, ease: "sine.inOut" }, .1);
+window.__timelines["scene-outcome"] = timeline_outcome;
+</script></body></html>

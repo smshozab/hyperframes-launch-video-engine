@@ -1,0 +1,92 @@
+{
+  "project": {
+    "brand": "Your Product",
+    "title": "Product launch video",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationSeconds": 60,
+    "palette": {
+      "background": "#0B1020",
+      "surface": "#151D2C",
+      "foreground": "#F8F9FC",
+      "muted": "#B7C1D2",
+      "accent": "#8C7BFF"
+    },
+    "fonts": {
+      "display": "Georgia, serif",
+      "body": "Arial, sans-serif",
+      "mono": "Consolas, monospace"
+    }
+  },
+  "scenes": [
+    {
+      "id": "opening",
+      "type": "hook",
+      "durationSeconds": 6,
+      "eyebrow": "PRODUCT LAUNCH",
+      "title": "Make your next big idea easier",
+      "support": "Open with the clearest promise your product makes."
+    },
+    {
+      "id": "problem",
+      "type": "problem",
+      "durationSeconds": 7,
+      "eyebrow": "THE FRICTION",
+      "title": "Less time lost between steps",
+      "support": "Name a problem your audience already recognizes."
+    },
+    {
+      "id": "product-shift",
+      "type": "bridge",
+      "durationSeconds": 7,
+      "eyebrow": "A BETTER FLOW",
+      "title": "A smoother way to get there",
+      "support": "Show the change your product brings to the workflow."
+    },
+    {
+      "id": "feature-one",
+      "type": "feature",
+      "durationSeconds": 9,
+      "eyebrow": "FEATURE ONE",
+      "title": "Start with less busywork",
+      "support": "Replace this with one concrete, verifiable benefit.",
+      "capture": "assets/captures/feature-one.png"
+    },
+    {
+      "id": "feature-two",
+      "type": "feature",
+      "durationSeconds": 9,
+      "eyebrow": "FEATURE TWO",
+      "title": "Keep the whole team in sync",
+      "support": "Show the real screen that makes the benefit clear.",
+      "capture": "assets/captures/feature-two.png"
+    },
+    {
+      "id": "feature-three",
+      "type": "feature",
+      "durationSeconds": 8,
+      "eyebrow": "FEATURE THREE",
+      "title": "Turn progress into useful insight",
+      "support": "Use a genuine product capture, with sample data if needed.",
+      "capture": "assets/captures/feature-three.png"
+    },
+    {
+      "id": "outcome",
+      "type": "proof",
+      "durationSeconds": 7,
+      "eyebrow": "THE OUTCOME",
+      "title": "Move from first step to finished work",
+      "support": "Use a real result or a clear summary of the value."
+    },
+    {
+      "id": "call-to-action",
+      "type": "cta",
+      "durationSeconds": 7,
+      "eyebrow": "YOUR NEXT STEP",
+      "title": "Ready when you are",
+      "support": "Add a simple call to action and the destination."
+    }
+  ],
+  "audio": []
+}

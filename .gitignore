@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+renders/
+snapshots/
+qa-preview/
+assets/captures/*
+!assets/captures/.gitkeep
+assets/sfx/*
+!assets/sfx/.gitkeep

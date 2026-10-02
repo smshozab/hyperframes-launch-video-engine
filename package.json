@@ -1,0 +1,16 @@
+{
+  "name": "hyperframes-launch-video-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first, config-driven starter for product launch videos with HyperFrames.",
+  "scripts": {
+    "build": "python scripts/build.py",
+    "preview": "npx --yes hyperframes@0.8.105 preview",
+    "check": "python scripts/build.py && npx --yes hyperframes@0.8.105 check",
+    "snapshot": "npx --yes hyperframes@0.8.105 snapshot --frames=8",
+    "render": "npx --yes hyperframes@0.8.105 render --output renders/launch-video.mp4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
