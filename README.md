@@ -1,8 +1,19 @@
 # HyperFrames Launch Video Engine
 
-A small, local-first starter for making product launch videos with HyperFrames. Set your brand, palette, copy, scene timings, and real product captures in `video.json`; run the builder; preview the editable composition in HyperFrames Studio.
+A clone-and-run, local-first workflow for making product launch videos with HyperFrames. Set your brand, palette, copy, scene timings, and real product captures in `video.json`; build and preview an editable composition on your own machine.
 
 The starter includes an eight-scene, 60-second example. It ships with abstract vector motion and clearly labeled capture slots. It contains no product-specific branding, screenshots, generated media, API keys, or paid-service dependency.
+
+## What makes this different
+
+This project focuses on one job: turning a product story and genuine product screenshots into an editable launch video. Its niche is a lightweight, reproducible workflow you can clone and adapt, rather than a hosted video platform or an AI video model.
+
+- **Start with a small setup:** use Python, Node.js, and a browser. There is no required plugin bundle, external MCP server, cloud workspace, or paid video-generation API.
+- **Keep the process local and low-cost:** the builder reads one `video.json` file and writes ordinary HTML scenes. Motion uses SVG/CSS and GSAP; there are no model weights to download and no inference service to pay for. The HyperFrames CLI is fetched with `npx`, and the preview loads GSAP from jsDelivr, so an internet connection is needed for those parts.
+- **Keep your video editable:** the output is a HyperFrames project made from scene files, not a flattened result from a locked editor. Change the config, source, screenshots, and motion, then rebuild.
+- **Show the real product:** feature shots use your own captures. Missing captures stay clearly marked as placeholders instead of being replaced by invented interface screens.
+
+The source and assets are kept deliberately small, but final render time still depends on your machine and the browser/FFmpeg setup. Run `npx hyperframes doctor` to check local export prerequisites.
 
 ## Quick start
 
